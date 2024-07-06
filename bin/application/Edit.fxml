@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="418.0" prefWidth="588.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.EditController">
+   <children>
+      <Label alignment="CENTER" layoutX="-4.0" layoutY="57.0" prefHeight="63.0" prefWidth="398.0" text="%editLabel" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="20.0">
+         <font>
+            <Font size="19.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <padding>
+            <Insets left="30.0" />
+         </padding></Label>
+      <Button fx:id="chooseFileButton" alignment="CENTER" layoutX="195.0" layoutY="126.0" maxWidth="60.0" mnemonicParsing="false" onAction="#chooseFile" style="-fx-background-color: white; -fx-border-color: black; -fx-border-radius: 4;" text="%chooseButton" AnchorPane.leftAnchor="195.0" AnchorPane.topAnchor="126.0" />
+      <Button fx:id="saveFileButton" alignment="CENTER" layoutX="441.0" layoutY="126.0" maxWidth="70.0" mnemonicParsing="false" onAction="#saveFile" style="-fx-background-color: white; -fx-border-color: black; -fx-border-radius: 4;" text="%saveButton" AnchorPane.leftAnchor="460.0" AnchorPane.topAnchor="126.0" />
+      <Label layoutX="58.0" layoutY="115.0" prefHeight="48.0" prefWidth="136.0" text="%fileLabel" />
+      <Label layoutX="58.0" layoutY="184.0" prefHeight="48.0" prefWidth="136.0" text="%imageLabel" />
+      <Label layoutX="58.0" layoutY="253.0" prefHeight="48.0" prefWidth="136.0" text="%nameLabel" />
+      <TextField fx:id="nameField" layoutX="194.0" layoutY="265.0" prefHeight="25.0" prefWidth="215.0" />
+      <Button fx:id="saveNameButton" alignment="CENTER" layoutX="426.0" layoutY="264.0" maxWidth="70.0" mnemonicParsing="false" onAction="#saveName" style="-fx-background-color: white; -fx-border-color: black; -fx-border-radius: 4;" text="%saveButton" AnchorPane.leftAnchor="460.0" />
+      <Button fx:id="chooseImageButton" alignment="CENTER" layoutX="195.0" layoutY="195.0" maxWidth="60.0" mnemonicParsing="false" onAction="#chooseImage" style="-fx-background-color: white; -fx-border-color: black; -fx-border-radius: 4;" text="%chooseButton" AnchorPane.leftAnchor="195.0" />
+      <Button fx:id="saveImageButton" alignment="CENTER" layoutX="441.0" layoutY="195.0" maxWidth="70.0" mnemonicParsing="false" onAction="#saveImage" style="-fx-background-color: white; -fx-border-color: black; -fx-border-radius: 4;" text="%saveButton" AnchorPane.leftAnchor="460.0" />
+      <Label fx:id="selectedFileLabel" layoutX="273.0" layoutY="131.0" prefHeight="17.0" prefWidth="155.0" text="%selectedFileLabel" AnchorPane.leftAnchor="273.0" AnchorPane.topAnchor="131.0" />
+      <Label fx:id="selectedImageLabel" layoutX="273.0" layoutY="201.0" prefHeight="17.0" prefWidth="155.0" text="%selectedImageLabel" />
+      <Button fx:id="deleteButton" alignment="CENTER" layoutX="195.0" layoutY="333.0" maxWidth="80.0" mnemonicParsing="false" onAction="#deleteApp" style="-fx-background-color: white; -fx-border-color: black; -fx-border-radius: 4;" text="%deleteButton" AnchorPane.leftAnchor="195.0" AnchorPane.topAnchor="333.0" />
+      <Label layoutX="58.0" layoutY="322.0" prefHeight="48.0" prefWidth="136.0" text="%deleteButtonLabel" />
+   </children>
+</AnchorPane>

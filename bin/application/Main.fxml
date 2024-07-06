@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
+   <children>
+      <VBox prefHeight="580.0" prefWidth="100.0" style="-fx-background-color: white; -fx-border-width: 0 1 0 0; -fx-border-color: #6a4fa1;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="140.0">
+         <children>
+            <Button id="ej1" fx:id="btn_programs" mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" style="-fx-background-radius: 0;" stylesheets="@application.css" textFill="WHITE">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <graphic>
+                  <ImageView fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../resources/program_icon_black.png" />
+                     </image>
+                     <effect>
+                        <ColorAdjust brightness="1.0" contrast="-0.05" saturation="-0.11" />
+                     </effect>
+                  </ImageView>
+               </graphic>
+               <tooltip>
+                  <Tooltip text="%applicationsTooltip" />
+               </tooltip>
+            </Button>
+            <Button fx:id="btn_settings" mnemonicParsing="false" onAction="#openSettings" prefHeight="100.0" prefWidth="100.0" style="-fx-background-radius: 0;" styleClass="side_button" stylesheets="@application.css" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../resources/settings_icon.png" />
+                     </image>
+                     <effect>
+                        <ColorAdjust brightness="1.0" contrast="-0.05" saturation="-0.11" />
+                     </effect>
+                  </ImageView>
+               </graphic>
+               <tooltip>
+                  <Tooltip text="%settingsTooltip" />
+               </tooltip>
+            </Button>
+            <Button fx:id="btn_help" mnemonicParsing="false" onAction="#openHelp" prefHeight="100.0" prefWidth="100.0" style="-fx-background-radius: 0;" styleClass="side_button" stylesheets="@application.css" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../resources/help_icon.png" />
+                     </image>
+                     <effect>
+                        <ColorAdjust brightness="1.0" contrast="-0.05" saturation="-0.11" />
+                     </effect>
+                  </ImageView>
+               </graphic>
+               <tooltip>
+                  <Tooltip text="%helpTooltip" />
+               </tooltip>
+            </Button>
+            <Button fx:id="btn_close" mnemonicParsing="false" onAction="#close" prefHeight="100.0" prefWidth="100.0" style="-fx-background-radius: 0;" styleClass="side_button" stylesheets="@application.css" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../resources/power_icon.png" />
+                     </image>
+                     <effect>
+                        <ColorAdjust brightness="1.0" contrast="-0.05" saturation="-0.11" />
+                     </effect>
+                  </ImageView>
+               </graphic>
+               <tooltip>
+                  <Tooltip text="%closeTooltip" />
+               </tooltip>
+            </Button>
+         </children></VBox>
+      <AnchorPane layoutX="100.0" layoutY="-5.0" prefHeight="140.0" prefWidth="1280.0" style="-fx-background-color: #6a4fa1;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="120.0" fitWidth="200.0" layoutX="48.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="80.0" AnchorPane.topAnchor="10.0">
+               <image>
+                  <Image url="@../resources/HUB_logo_white.png" />
+               </image>
+               <effect>
+                  <ColorAdjust brightness="0.43" contrast="-0.01" hue="-0.29" saturation="-1.0" />
+               </effect>
+            </ImageView>
+            <Label layoutX="279.0" layoutY="27.0" prefWidth="200.0" text="HUB " textFill="WHITE" AnchorPane.leftAnchor="230.0">
+               <font>
+                  <Font name="Eras Bold ITC" size="74.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+      <AnchorPane layoutX="181.0" layoutY="284.0" prefHeight="580.0" prefWidth="1140.0" style="-fx-background-color: #edf5fc;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="140.0">
+         <children>
+            <AnchorPane layoutX="65.0" layoutY="63.0" prefHeight="200.0" prefWidth="300.0" style="-fx-background-color: white; -fx-border-color: #6a4fa1;" AnchorPane.leftAnchor="70.0" AnchorPane.topAnchor="60.0">
+               <children>
+                  <ImageView fx:id="image1" fitHeight="120.0" fitWidth="130.0" layoutX="26.0" layoutY="26.0" pickOnBounds="true" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="20.0">
+                     <image>
+                        <Image url="@../resources/HUB_logo.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="launchButton1" layoutX="151.0" layoutY="2.0" mnemonicParsing="false" onAction="#launch1" prefHeight="47.0" prefWidth="100.0" stylesheets="@application.css" text="%launchButton" textFill="WHITE" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+                     <font>
+                        <Font name="Eras Bold ITC" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="editButton1" layoutX="150.0" layoutY="124.0" mnemonicParsing="false" onAction="#openEdit" prefHeight="47.0" prefWidth="100.0" stylesheets="@application.css" text="%editButton" textFill="WHITE" AnchorPane.bottomAnchor="60.0" AnchorPane.rightAnchor="20.0">
+                     <font>
+                        <Font name="Eras Bold ITC" size="18.0" />
+                     </font>
+                  </Button>
+                  <Label fx:id="app_title1" layoutX="25.0" layoutY="141.0" prefHeight="10.0" prefWidth="250.0" style="-fx-alignment: center;" text="%noAppTitle" textAlignment="CENTER" AnchorPane.bottomAnchor="16.0" AnchorPane.leftAnchor="25.0">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+               </children></AnchorPane>
+            <AnchorPane layoutX="75.0" layoutY="73.0" prefHeight="200.0" prefWidth="300.0" style="-fx-background-color: white; -fx-border-color: #6a4fa1;" AnchorPane.leftAnchor="70.0" AnchorPane.topAnchor="320.0">
+               <children>
+                  <ImageView fx:id="image4" fitHeight="120.0" fitWidth="130.0" layoutX="26.0" layoutY="26.0" pickOnBounds="true" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="20.0">
+                     <image>
+                        <Image url="@../resources/HUB_logo.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="launchButton4" layoutX="151.0" layoutY="2.0" mnemonicParsing="false" onAction="#launch4" prefHeight="47.0" prefWidth="100.0" stylesheets="@application.css" text="%launchButton" textFill="WHITE" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+                     <font>
+                        <Font name="Eras Bold ITC" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="editButton4" layoutX="150.0" layoutY="124.0" mnemonicParsing="false" onAction="#openEdit" prefHeight="47.0" prefWidth="100.0" stylesheets="@application.css" text="%editButton" textFill="WHITE" AnchorPane.bottomAnchor="60.0" AnchorPane.rightAnchor="20.0">
+                     <font>
+                        <Font name="Eras Bold ITC" size="18.0" />
+                     </font>
+                  </Button>
+                  <Label fx:id="app_title4" layoutX="25.0" layoutY="141.0" prefHeight="10.0" prefWidth="250.0" style="-fx-alignment: center;" text="%noAppTitle" textAlignment="CENTER" AnchorPane.bottomAnchor="16.0" AnchorPane.leftAnchor="25.0">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="421.0" layoutY="35.0" prefHeight="200.0" prefWidth="300.0" style="-fx-background-color: white; -fx-border-color: #6a4fa1;" AnchorPane.leftAnchor="440.0" AnchorPane.topAnchor="60.0">
+               <children>
+                  <ImageView fx:id="image2" fitHeight="120.0" fitWidth="130.0" layoutX="26.0" layoutY="26.0" pickOnBounds="true" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="20.0">
+                     <image>
+                        <Image url="@../resources/HUB_logo.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="launchButton2" layoutX="151.0" layoutY="2.0" mnemonicParsing="false" onAction="#launch2" prefHeight="47.0" prefWidth="100.0" stylesheets="@application.css" text="%launchButton" textFill="WHITE" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+                     <font>
+                        <Font name="Eras Bold ITC" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="editButton2" layoutX="150.0" layoutY="124.0" mnemonicParsing="false" onAction="#openEdit" prefHeight="47.0" prefWidth="100.0" stylesheets="@application.css" text="%editButton" textFill="WHITE" AnchorPane.bottomAnchor="60.0" AnchorPane.rightAnchor="20.0">
+                     <font>
+                        <Font name="Eras Bold ITC" size="18.0" />
+                     </font>
+                  </Button>
+                  <Label fx:id="app_title2" layoutX="25.0" layoutY="141.0" prefHeight="10.0" prefWidth="250.0" style="-fx-alignment: center;" text="%noAppTitle" textAlignment="CENTER" AnchorPane.bottomAnchor="16.0" AnchorPane.leftAnchor="25.0">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="427.0" layoutY="175.0" prefHeight="200.0" prefWidth="300.0" style="-fx-background-color: white; -fx-border-color: #6a4fa1;" AnchorPane.leftAnchor="810.0" AnchorPane.topAnchor="60.0">
+               <children>
+                  <ImageView fx:id="image3" fitHeight="120.0" fitWidth="130.0" layoutX="26.0" layoutY="26.0" pickOnBounds="true" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="20.0">
+                     <image>
+                        <Image url="@../resources/HUB_logo.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="launchButton3" layoutX="151.0" layoutY="2.0" mnemonicParsing="false" onAction="#launch3" prefHeight="47.0" prefWidth="100.0" stylesheets="@application.css" text="%launchButton" textFill="WHITE" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+                     <font>
+                        <Font name="Eras Bold ITC" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="editButton3" layoutX="150.0" layoutY="124.0" mnemonicParsing="false" onAction="#openEdit" prefHeight="47.0" prefWidth="100.0" stylesheets="@application.css" text="%editButton" textFill="WHITE" AnchorPane.bottomAnchor="60.0" AnchorPane.rightAnchor="20.0">
+                     <font>
+                        <Font name="Eras Bold ITC" size="18.0" />
+                     </font>
+                  </Button>
+                  <Label fx:id="app_title3" layoutX="25.0" layoutY="141.0" prefHeight="10.0" prefWidth="250.0" style="-fx-alignment: center;" text="%noAppTitle" textAlignment="CENTER" AnchorPane.bottomAnchor="16.0" AnchorPane.leftAnchor="25.0">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="431.0" layoutY="293.0" prefHeight="200.0" prefWidth="300.0" style="-fx-background-color: white; -fx-border-color: #6a4fa1;" AnchorPane.leftAnchor="440.0" AnchorPane.topAnchor="320.0">
+               <children>
+                  <ImageView fx:id="image5" fitHeight="120.0" fitWidth="130.0" layoutX="26.0" layoutY="26.0" pickOnBounds="true" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="20.0">
+                     <image>
+                        <Image url="@../resources/HUB_logo.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="launchButton5" layoutX="151.0" layoutY="2.0" mnemonicParsing="false" onAction="#launch5" prefHeight="47.0" prefWidth="100.0" stylesheets="@application.css" text="%launchButton" textFill="WHITE" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+                     <font>
+                        <Font name="Eras Bold ITC" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="editButton5" layoutX="150.0" layoutY="124.0" mnemonicParsing="false" onAction="#openEdit" prefHeight="47.0" prefWidth="100.0" stylesheets="@application.css" text="%editButton" textFill="WHITE" AnchorPane.bottomAnchor="60.0" AnchorPane.rightAnchor="20.0">
+                     <font>
+                        <Font name="Eras Bold ITC" size="18.0" />
+                     </font>
+                  </Button>
+                  <Label fx:id="app_title5" layoutX="25.0" layoutY="141.0" prefHeight="10.0" prefWidth="250.0" style="-fx-alignment: center;" text="%noAppTitle" textAlignment="CENTER" AnchorPane.bottomAnchor="16.0" AnchorPane.leftAnchor="25.0">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="810.0" layoutY="320.0" prefHeight="200.0" prefWidth="300.0" style="-fx-background-color: white; -fx-border-color: #6a4fa1;" AnchorPane.leftAnchor="810.0" AnchorPane.topAnchor="320.0">
+               <children>
+                  <ImageView fx:id="image6" fitHeight="120.0" fitWidth="130.0" layoutX="26.0" layoutY="26.0" pickOnBounds="true" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="20.0">
+                     <image>
+                        <Image url="@../resources/HUB_logo.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="launchButton6" layoutX="151.0" layoutY="2.0" mnemonicParsing="false" onAction="#launch6" prefHeight="47.0" prefWidth="100.0" stylesheets="@application.css" text="%launchButton" textFill="WHITE" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+                     <font>
+                        <Font name="Eras Bold ITC" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="editButton6" layoutX="150.0" layoutY="124.0" mnemonicParsing="false" onAction="#openEdit" prefHeight="47.0" prefWidth="100.0" stylesheets="@application.css" text="%editButton" textFill="WHITE" AnchorPane.bottomAnchor="60.0" AnchorPane.rightAnchor="20.0">
+                     <font>
+                        <Font name="Eras Bold ITC" size="18.0" />
+                     </font>
+                  </Button>
+                  <Label fx:id="app_title6" layoutX="25.0" layoutY="141.0" prefHeight="10.0" prefWidth="250.0" style="-fx-alignment: center;" text="%noAppTitle" textAlignment="CENTER" AnchorPane.bottomAnchor="16.0" AnchorPane.leftAnchor="25.0">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children></AnchorPane>
+   </children>
+</AnchorPane>
